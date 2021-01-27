@@ -1,0 +1,66 @@
+openapi: 3.0.1
+info:
+  title: Gulag API
+  description: API description.
+  version: 1.0.0
+servers:
+  - url: 'http://gulalg.loc'
+paths:
+  /sanctum/csrf-cookie:
+    get:
+      summary: Sets a session
+      description: Puts an XSRF-TOKEN inside cookie memory
+      responses:
+        '204':
+          description: New session was set successfully
+  /login:
+    post:
+      summary: Login
+      description: Login with a user's login and password
+      parameters:
+        - name: email
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: password
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '422':
+          description: Incorrect credentionals
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: The given data was invalid.
+                  errors:
+                    type: object
+                    properties:
+                      email:
+                        description: A list of email errors.
+                        type: array
+                        items:
+                          type: string
+                          description: An error description
+                      password:
+                        description: A list of password errors.
+                        type: array
+                        items:
+                          type: string
+                          description: An error description
+
+components:
+  securitySchemes:
+    XSRF-TOKEN:
+      type: token
+      in: cookie
+      name: XSRF-TOKEN
+
+security:
+  - XSRF-TOKEN: []
