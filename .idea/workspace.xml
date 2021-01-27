@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95bcf4db-fb64-47f1-a36f-34dfbe3f2af1" name="Default Changelist" comment="" />
+    <list default="true" id="95bcf4db-fb64-47f1-a36f-34dfbe3f2af1" name="Default Changelist" comment="Installed and configured&#10;Sanctum and Fortify">
+      <change beforePath="$PROJECT_DIR$/.idea/gulag.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gulag.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/public/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="OpenAPI File (YAML)" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,6 +138,11 @@
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/vendor/laravel/fortify" />
+      <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
     </include_path>
   </component>
   <component name="ProjectId" id="1nYobv4LGDtesqyI2fCLG1lR2cE" />
@@ -141,11 +161,60 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\gulag\public" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Swagger Codegen.SwaggerCodegen: swagger.yaml">
+    <configuration name="generated-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="SwaggerCodegen: swagger.yaml" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="" />
+      <option name="jdkPath" value="Default" />
+      <option name="language" value="" />
+      <option name="specificationPath" value="C:\OpenServer\domains\gulag\swagger.yaml" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="" />
+      <option name="jdkPath" value="Default" />
+      <option name="language" value="" />
+      <option name="specificationPath" value="C:\OpenServer\domains\gulag\swagger.yaml" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests#2" />
+        <item itemvalue="HTTP Request.generated-requests#1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -155,8 +224,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611576459969</updated>
-      <workItem from="1611576461100" duration="1809000" />
+      <workItem from="1611576461100" duration="2649000" />
+      <workItem from="1611609509710" duration="7839000" />
+      <workItem from="1611682998029" duration="7321000" />
     </task>
+    <task id="LOCAL-00001" summary="Installed and configured&#10;Sanctum and Fortify">
+      <created>1611647701798</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611647701799</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add swagger docs">
+      <created>1611741522436</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611741522436</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,23 +250,42 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Installed and configured&#10;Sanctum and Fortify" />
+    <MESSAGE value="Add swagger docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add swagger docs" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1431" height="133" key="GridCell.Tab.0.bottom" timestamp="1611576531228">
+    <state x="341" y="0" key="CommitChangelistDialog2" timestamp="1611741520315">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="133" key="GridCell.Tab.0.bottom/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611576531228" />
-    <state width="1431" height="133" key="GridCell.Tab.0.center" timestamp="1611576531228">
+    <state x="341" y="0" key="CommitChangelistDialog2/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611741520315" />
+    <state x="517" y="187" key="FileChooserDialogImpl" timestamp="1611683672744">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="133" key="GridCell.Tab.0.center/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611576531228" />
-    <state width="1431" height="133" key="GridCell.Tab.0.left" timestamp="1611576531227">
+    <state x="517" y="187" key="FileChooserDialogImpl/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611683672744" />
+    <state width="1431" height="133" key="GridCell.Tab.0.bottom" timestamp="1611738484870">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="133" key="GridCell.Tab.0.left/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611576531227" />
-    <state width="1431" height="133" key="GridCell.Tab.0.right" timestamp="1611576531228">
+    <state width="1431" height="133" key="GridCell.Tab.0.bottom/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611738484870" />
+    <state width="1431" height="133" key="GridCell.Tab.0.center" timestamp="1611738484869">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="133" key="GridCell.Tab.0.right/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611576531228" />
+    <state width="1431" height="133" key="GridCell.Tab.0.center/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611738484869" />
+    <state width="1431" height="133" key="GridCell.Tab.0.left" timestamp="1611738484869">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="133" key="GridCell.Tab.0.left/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611738484869" />
+    <state width="1431" height="133" key="GridCell.Tab.0.right" timestamp="1611738484869">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="133" key="GridCell.Tab.0.right/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611738484869" />
+    <state x="573" y="356" key="NewPhpFileDialog" timestamp="1611740861486">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="573" y="356" key="NewPhpFileDialog/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611740861486" />
+    <state x="447" y="165" width="579" height="534" key="find.popup" timestamp="1611686982915">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="447" y="165" width="579" height="534" key="find.popup/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611686982915" />
   </component>
 </project>
