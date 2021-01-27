@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/swagger', [\App\Http\Controllers\SwaggerController::class, 'index']);
+Route::get('/swagger', [\App\Http\Controllers\SwaggerController::class, 'index'])->name('swagger.index');

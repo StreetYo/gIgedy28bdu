@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95bcf4db-fb64-47f1-a36f-34dfbe3f2af1" name="Default Changelist" comment="Installed and configured&#10;Sanctum and Fortify">
-      <change beforePath="$PROJECT_DIR$/.idea/gulag.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gulag.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="95bcf4db-fb64-47f1-a36f-34dfbe3f2af1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/public/swagger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +222,7 @@
       <updated>1611576459969</updated>
       <workItem from="1611576461100" duration="2649000" />
       <workItem from="1611609509710" duration="7839000" />
-      <workItem from="1611682998029" duration="7321000" />
+      <workItem from="1611682998029" duration="10799000" />
     </task>
     <task id="LOCAL-00001" summary="Installed and configured&#10;Sanctum and Fortify">
       <created>1611647701798</created>
@@ -242,7 +238,28 @@
       <option name="project" value="LOCAL" />
       <updated>1611741522436</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ignore .idea">
+      <created>1611741995016</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611741995016</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update swagger">
+      <created>1611742033303</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611742033303</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Auth example">
+      <created>1611742097472</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611742097472</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,13 +269,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Installed and configured&#10;Sanctum and Fortify" />
     <MESSAGE value="Add swagger docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add swagger docs" />
+    <MESSAGE value="Ignore .idea" />
+    <MESSAGE value="Update swagger" />
+    <MESSAGE value="Auth example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auth example" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="341" y="0" key="CommitChangelistDialog2" timestamp="1611741520315">
+    <state x="341" y="0" key="CommitChangelistDialog2" timestamp="1611742096638">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="341" y="0" key="CommitChangelistDialog2/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611741520315" />
+    <state x="341" y="0" key="CommitChangelistDialog2/0.0.1474.864/1920.0.2560.1040@0.0.1474.864" timestamp="1611742096638" />
     <state x="517" y="187" key="FileChooserDialogImpl" timestamp="1611683672744">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
