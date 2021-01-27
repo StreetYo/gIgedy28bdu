@@ -29,6 +29,16 @@ paths:
           schema:
             type: string
       responses:
+        '200':
+          description: OK
+          content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    two_factor:
+                      type: boolean
+                      description: Two factor authorization flag
         '422':
           description: Incorrect credentionals
           content:
