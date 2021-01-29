@@ -18,3 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/swagger', [\App\Http\Controllers\SwaggerController::class, 'index'])->name('swagger.index');
+
+Route::get('/forbidden', function() {
+    return response()->json([
+        'message' => 'Forbidden'
+    ])->setStatusCode(403);
+});
