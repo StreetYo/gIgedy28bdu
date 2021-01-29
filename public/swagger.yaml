@@ -64,8 +64,22 @@ paths:
                         items:
                           type: string
                           description: An error description
+        '403':
+          $ref: '#/components/responses/forbidden'
 
 components:
+  responses:
+    forbidden:
+      description: Returns if a user makes incorrect actions
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                description: Forbidden
+
   securitySchemes:
     XSRF-TOKEN:
       type: token
