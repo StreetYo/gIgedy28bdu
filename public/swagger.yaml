@@ -3,6 +3,9 @@ info:
   title: Gulag API
   description: API description.
   version: 1.0.0
+tags:
+  - name: Session
+  - name: Auth
 servers:
   - url: 'http://gulalg.loc'
 paths:
@@ -10,6 +13,8 @@ paths:
     get:
       summary: Sets a session
       description: Puts an XSRF-TOKEN inside cookie memory
+      tags:
+        - Session
       responses:
         '204':
           description: New session was set successfully
@@ -17,15 +22,19 @@ paths:
     post:
       summary: Login
       description: Login with a user's login and password
+      tags:
+        - Auth
       parameters:
         - name: email
           in: query
           required: true
+          example: test@email.loc
           schema:
             type: string
         - name: password
           in: query
           required: true
+          example: testpasSword!123
           schema:
             type: string
       responses:
@@ -38,6 +47,7 @@ paths:
                   properties:
                     two_factor:
                       type: boolean
+                      example: false
                       description: Two factor authorization flag
         '422':
           description: Incorrect credentionals
@@ -48,6 +58,7 @@ paths:
                 properties:
                   message:
                     type: string
+                    example: The given data was invalid.
                     description: The given data was invalid.
                   errors:
                     type: object
@@ -57,16 +68,110 @@ paths:
                         type: array
                         items:
                           type: string
+                          example: The email field is required.
                           description: An error description
                       password:
                         description: A list of password errors.
                         type: array
                         items:
                           type: string
+                          example: The password field is required.
                           description: An error description
         '403':
           $ref: '#/components/responses/forbidden'
-
+  /register:
+    post:
+      summary: Register
+      description: Register with user's data
+      tags:
+        - Auth
+      parameters:
+        - name: email
+          in: query
+          required: true
+          example: test@email.loc
+          schema:
+            type: string
+        - name: name
+          in: query
+          required: true
+          example: Navalny
+          schema:
+            type: string
+        - name: password
+          in: query
+          required: true
+          example: testpasSword!123
+          schema:
+            type: string
+        - name: password_confirmation
+          in: query
+          required: true
+          example: testpasSword!123
+          schema:
+            type: string
+      responses:
+        '201':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+                example: ""
+                description: Empty string
+        '422':
+          description: The given data was invalid.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: The given data was invalid.
+                    description: The given data was invalid.
+                  errors:
+                    type: object
+                    properties:
+                      email:
+                        description: A list of email errors.
+                        type: array
+                        items:
+                          type: string
+                          example: The email has already been taken.
+                          description: An error description
+                      name:
+                        description: A list of name errors.
+                        type: array
+                        items:
+                          type: string
+                          example: The name field is required.
+                          description: An error description
+                      password:
+                        description: A list of password errors.
+                        type: array
+                        items:
+                          type: string
+                          example: The password field is required.
+                          description: An error description
+                      password_confirmation:
+                        description: A list of password errors.
+                        type: array
+                        items:
+                          type: string
+                          example: The password confirmation does not match.
+                          description: An error description
+        '403':
+          $ref: '#/components/responses/forbidden'
+  /logout:
+    post:
+      summary: Logout
+      description: Logout, that's it
+      tags:
+        - Auth
+      responses:
+        '204':
+          description: OK
 components:
   responses:
     forbidden:
@@ -78,6 +183,7 @@ components:
             properties:
               message:
                 type: string
+                example: Forbidden
                 description: Forbidden
 
   securitySchemes:
