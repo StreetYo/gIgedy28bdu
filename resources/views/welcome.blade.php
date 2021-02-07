@@ -15,7 +15,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0">
+        <div class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0" style="flex-flow: column;">
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                 @if (Route::has('login'))
                     @auth
@@ -31,7 +31,10 @@
                 <a href="{{ route('swagger.index') }}" class="text-sm text-gray-700 underline">Documentation</a>
             </div>
 
-            <h1>Welcome to {{ env('APP_NAME') }}</h1>
+            <div>
+                <iframe width="540" height="300" src="https://www.youtube.com/embed/FaCkrk1HX30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h1 style="text-transform: uppercase">WELCXME TX THE {{ env('APP_NAME') }}</h1>
 
         </div>
         <script src="{{ mix('js/app.js') }}"></script>
